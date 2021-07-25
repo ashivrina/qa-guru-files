@@ -29,4 +29,7 @@ public class TestData {
             " text. Oh, how boring typing this stuff. But not as boring as watching \n" +
             " paint dry. And more text. And more text. And more text. And more text. \n" +
             " Boring.  More, a little more text. The end, and just as well. \n";
+
+    public static String expectedArchiveContent = "Hello everyone!\n" +
+            "This is the content of a password-protected archive.";
 }
