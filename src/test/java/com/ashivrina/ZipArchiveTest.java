@@ -7,15 +7,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 
 
 public class ZipArchiveTest {
 
     @Test
-    void simpleZipTest() throws IOException, URISyntaxException {
-        String unzipTxtFilePath = "./src/test/resources/extracted/annas_archive.txt";
-
+    void simpleZipTest() throws IOException {
         ZipFile zipFile = new ZipFile("./src/test/resources/zip/annas_archive.zip");
         if (zipFile.isEncrypted()) {
             zipFile.setPassword("password123".toCharArray());
